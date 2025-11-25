@@ -1,0 +1,138 @@
+.impact-chart-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.impact-chart-section h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.impact-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.metric-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.metric-card.highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.metric-card.improvement {
+  background-color: #d4edda;
+  border: 2px solid #4caf50;
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-card.highlight .metric-label,
+.metric-card.improvement .metric-label {
+  color: inherit;
+  opacity: 0.9;
+}
+
+.metric-value {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #667eea;
+}
+
+.metric-card.highlight .metric-value {
+  color: white;
+}
+
+.metric-card.improvement .metric-value {
+  color: #155724;
+}
+
+.metric-bar {
+  background-color: #e0e0e0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.metric-card.highlight .metric-bar {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.metric-fill {
+  background-color: #667eea;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+.improvement-percentage {
+  font-size: 0.9rem;
+  color: #155724;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.impact-projections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f4ff 0%, #f8f9ff 100%);
+  border-radius: 10px;
+  border: 2px dashed #667eea;
+}
+
+.projection-item {
+  text-align: center;
+}
+
+.projection-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #667eea;
+  font-size: 1.05rem;
+}
+
+.projection-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.projection-desc {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .impact-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-projections {
+    grid-template-columns: 1fr 1fr;
+  }
+}

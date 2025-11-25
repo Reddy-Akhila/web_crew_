@@ -1,0 +1,106 @@
+.issues-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.filter-buttons button:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filter-buttons button.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.issue-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #ddd;
+}
+
+.issue-severity {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  height: fit-content;
+  white-space: nowrap;
+}
+
+.issue-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+}
+
+.issue-content p {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.issue-links {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #4caf50;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
